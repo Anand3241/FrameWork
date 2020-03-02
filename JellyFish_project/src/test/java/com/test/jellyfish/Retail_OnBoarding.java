@@ -12,6 +12,7 @@ public class Retail_OnBoarding extends BaseLib
 public void signUp_test()
 {
    retail=new Reatil_SignUp_Page(driver);
+   System.out.println("Hello World");
 	retail.signup();
 }
 }
