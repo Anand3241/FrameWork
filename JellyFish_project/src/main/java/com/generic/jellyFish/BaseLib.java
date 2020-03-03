@@ -77,28 +77,26 @@ public class BaseLib
 			  System.out.println(title);
 			  String url = driver.getCurrentUrl();
 			  System.out.println(url);
-			
+		
 		  } 
 			  else
 			  {
-				  ChromeOptions options=new ChromeOptions();
-				  Map prefs=new HashMap();
-				  prefs.put("profile.default_content_setting_values.notifications", 1);
-				  options.setExperimentalOption("prefs",prefs);
-				  ChromeDriver driver=new ChromeDriver(options);
-				  System.setProperty("webdriver.chrome.driver",new File(System.getProperty("user.dir"))+"/exeFiles/chromedriver.exe");
 				 
-			    driver= new ChromeDriver(options);
+				  
+				  System.setProperty("webdriver.chrome.driver",new File(System.getProperty("user.dir"))+"/exeFiles/chromedriver.exe");
+				   driver=new ChromeDriver();
+			    
 				driver.manage().window().maximize();
-				
 				String u = p.getProperty("url");
+				
 				System.out.println(u);
 				driver.get(u);
+				Utility.waitTillPageLoad(2000);
 				String title = driver.getTitle();
 				System.out.println(title);
 				//Assert.assertEquals(title,"PROASSUR");  
-				  String url = driver.getCurrentUrl();
-				   System.out.println(url);
+				String url = driver.getCurrentUrl();
+			    System.out.println(url);
 			  }
 			
 			 

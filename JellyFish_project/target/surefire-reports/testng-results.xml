@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[setting up Reports and Test started]]>
@@ -10,13 +10,25 @@
     <line>
       <![CDATA[The Test is about to end]]>
     </line>
+    <line>
+      <![CDATA[The Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[The Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[The Test is about to end]]>
+    </line>
+    <line>
+      <![CDATA[The Test is about to end]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-02-26T19:03:01 IST" name="Suite" finished-at="2020-02-26T19:03:13 IST" duration-ms="12178">
+  <suite started-at="2020-03-03T18:14:16 IST" name="Suite" finished-at="2020-03-03T18:15:13 IST" duration-ms="56750">
     <groups>
     </groups>
-    <test started-at="2020-02-26T19:03:01 IST" name="Test" finished-at="2020-02-26T19:03:13 IST" duration-ms="12178">
+    <test started-at="2020-03-03T18:14:16 IST" name="Test" finished-at="2020-03-03T18:15:13 IST" duration-ms="56750">
       <class name="com.test.jellyfish.Retail_OnBoarding">
-        <test-method is-config="true" signature="setSuiteUp()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-02-26T19:03:00 IST" name="setSuiteUp" finished-at="2020-02-26T19:03:01 IST" duration-ms="123" status="PASS">
+        <test-method is-config="true" signature="setSuiteUp()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:16 IST" name="setSuiteUp" finished-at="2020-03-03T18:14:16 IST" duration-ms="131" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[setting up Reports and Test started]]>
@@ -26,7 +38,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setSuiteUp -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-02-26T19:03:01 IST" name="preCondition" finished-at="2020-02-26T19:03:12 IST" duration-ms="11424" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:16 IST" name="preCondition" finished-at="2020-03-03T18:14:27 IST" duration-ms="10843" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-02-26T19:03:12 IST" name="signUp_test" finished-at="2020-02-26T19:03:12 IST" duration-ms="60" status="FAIL">
+        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:27 IST" name="signUp_test" finished-at="2020-03-03T18:14:27 IST" duration-ms="261" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()="Please log in to proceed"]"}
@@ -46,8 +58,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'KELLGGNCPU0350', ip: '192.168.15.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ANAND~1.SRI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f5bc4210379485d270c5986cdecea44d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ANAND~1.SRI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 697ca6c084734daa159c8e5abb34199f
 *** Element info: {Using=xpath, value=//p[text()="Please log in to proceed"]}]]>
             </message>
             <full-stacktrace>
@@ -57,8 +69,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'KELLGGNCPU0350', ip: '192.168.15.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ANAND~1.SRI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:57386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f5bc4210379485d270c5986cdecea44d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ANAND~1.SRI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 697ca6c084734daa159c8e5abb34199f
 *** Element info: {Using=xpath, value=//p[text()="Please log in to proceed"]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -78,8 +90,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-at com.pom.jellyFish.Reatil_SignUp_Page.signup(Reatil_SignUp_Page.java:36)
-at com.test.jellyfish.Retail_OnBoarding.signUp_test(Retail_OnBoarding.java:15)
+at com.pom.jellyFish.Reatil_SignUp_Page.signup(Reatil_SignUp_Page.java:39)
+at com.test.jellyfish.Retail_OnBoarding.signUp_test(Retail_OnBoarding.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,11 +130,127 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp_test -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-02-26T19:03:12 IST" name="postCondition" finished-at="2020-02-26T19:03:13 IST" duration-ms="661" status="PASS">
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:27 IST" name="postCondition" finished-at="2020-03-03T18:14:28 IST" duration-ms="749" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=signUp_test status=FAILURE method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Test is about to end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:28 IST" name="preCondition" finished-at="2020-03-03T18:14:39 IST" duration-ms="10931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:39 IST" name="signUp_test" finished-at="2020-03-03T18:14:40 IST" duration-ms="891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_test -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:40 IST" name="postCondition" finished-at="2020-03-03T18:14:40 IST" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUp_test status=SUCCESS method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Test is about to end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:40 IST" name="preCondition" finished-at="2020-03-03T18:14:50 IST" duration-ms="10261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:50 IST" name="signUp_test" finished-at="2020-03-03T18:14:51 IST" duration-ms="907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_test -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:51 IST" name="postCondition" finished-at="2020-03-03T18:14:51 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUp_test status=SUCCESS method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Test is about to end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:14:51 IST" name="preCondition" finished-at="2020-03-03T18:15:01 IST" duration-ms="10064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:15:01 IST" name="signUp_test" finished-at="2020-03-03T18:15:02 IST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_test -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:15:02 IST" name="postCondition" finished-at="2020-03-03T18:15:02 IST" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUp_test status=SUCCESS method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[The Test is about to end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:15:02 IST" name="preCondition" finished-at="2020-03-03T18:15:12 IST" duration-ms="10048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:15:12 IST" name="signUp_test" finished-at="2020-03-03T18:15:13 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp_test -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8]" started-at="2020-03-03T18:15:13 IST" name="postCondition" finished-at="2020-03-03T18:15:13 IST" duration-ms="215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signUp_test status=SUCCESS method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@3bbc39f8] output={null}]]]>
               </value>
             </param>
           </params>

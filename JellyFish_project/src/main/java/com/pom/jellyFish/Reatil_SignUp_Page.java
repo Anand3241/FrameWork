@@ -1,5 +1,7 @@
 package com.pom.jellyFish;
 
+import java.awt.AWTException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,6 +11,7 @@ import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.generic.jellyFish.BaseLib;
+import com.generic.jellyFish.Utility;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class Reatil_SignUp_Page extends BaseLib
@@ -30,9 +33,9 @@ public class Reatil_SignUp_Page extends BaseLib
 	private WebElement sign_up_text;
 	
 	
-public void signup()
+public void signup() throws AWTException
 {
-
+     Utility.keyboard_activity();
 	if(jellyfish_logologin_text.isDisplayed()==true)
 	{
 		logger.log(Status.PASS,"Login Page verified Successfully");
