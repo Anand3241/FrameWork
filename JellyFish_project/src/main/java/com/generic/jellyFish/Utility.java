@@ -230,12 +230,19 @@ public class Utility extends BaseLib
 			 wait = new WebDriverWait(driver, seconds);
 			   wait.until(ExpectedConditions.visibilityOf(ElementTobeFound));
 	  }
+	   
+	   public static void page_load(String title)
+	   {
+		   WebDriverWait wait = new WebDriverWait(driver, 20); //you can play with the time integer  to wait for longer than 15 seconds.`
+		   wait.until(ExpectedConditions.titleContains(title));
+	   }
+	   
 	 
 	   
 	   public static void waitTillPageLoad(int i)
 	   {
 
-		   driver.manage().timeouts().pageLoadTimeout(i, TimeUnit.SECONDS);
+		   driver.manage().timeouts().implicitlyWait(i,TimeUnit.SECONDS);
 
 	 }
 	   

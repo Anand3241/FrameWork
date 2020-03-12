@@ -5,11 +5,17 @@
 <listener class-name="com.generic.jellyFish.ListenerTest"/>
 </listeners>
 
-  <test thread-count="5" name="Test">
+  <test name="Test">
   <parameter name="browser" value="Chrome" />
   
     <classes>
       <class name="com.test.jellyfish.Retail_OnBoarding"/>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Test -->	
+  
 </suite> <!-- Suite -->
+	
+		
+			
+				
+				

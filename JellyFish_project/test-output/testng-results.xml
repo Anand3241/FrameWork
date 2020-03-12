@@ -11,12 +11,12 @@
       <![CDATA[The Test is about to end]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-03-03T17:59:30 IST" name="Suite" finished-at="2020-03-03T17:59:42 IST" duration-ms="12180">
+  <suite started-at="2020-03-12T14:50:02 IST" name="Suite" finished-at="2020-03-12T14:50:17 IST" duration-ms="14546">
     <groups>
     </groups>
-    <test started-at="2020-03-03T17:59:30 IST" name="Test" finished-at="2020-03-03T17:59:42 IST" duration-ms="12180">
-      <class name="com.test.jellyfish.Retail_OnBoarding">
-        <test-method is-config="true" signature="setSuiteUp()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@63a65a25]" started-at="2020-03-03T17:59:29 IST" name="setSuiteUp" finished-at="2020-03-03T17:59:30 IST" duration-ms="167" status="PASS">
+    <test started-at="2020-03-12T14:50:02 IST" name="Test" finished-at="2020-03-12T14:50:17 IST" duration-ms="14546">
+      <class name="com.test.jellyfish.LoginTest">
+        <test-method is-config="true" signature="setSuiteUp()[pri:0, instance:com.test.jellyfish.LoginTest@6b26e945]" started-at="2020-03-12T14:50:02 IST" name="setSuiteUp" finished-at="2020-03-12T14:50:02 IST" duration-ms="191" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[setting up Reports and Test started]]>
@@ -26,7 +26,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setSuiteUp -->
-        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@63a65a25]" started-at="2020-03-03T17:59:30 IST" name="preCondition" finished-at="2020-03-03T17:59:40 IST" duration-ms="10044" status="PASS">
+        <test-method is-config="true" signature="preCondition(java.lang.String)[pri:0, instance:com.test.jellyfish.LoginTest@6b26e945]" started-at="2020-03-12T14:50:03 IST" name="preCondition" finished-at="2020-03-12T14:50:14 IST" duration-ms="11769" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@63a65a25]" started-at="2020-03-03T17:59:40 IST" name="signUp_test" finished-at="2020-03-03T17:59:41 IST" duration-ms="1040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp_test -->
-        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@63a65a25]" started-at="2020-03-03T17:59:41 IST" name="postCondition" finished-at="2020-03-03T17:59:42 IST" duration-ms="1066" status="PASS">
+        <test-method signature="retail_login(java.lang.String, java.lang.String)[pri:0, instance:com.test.jellyfish.LoginTest@6b26e945]" started-at="2020-03-12T14:50:14 IST" name="retail_login" data-provider="Registration" finished-at="2020-03-12T14:50:16 IST" duration-ms="1752" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signUp_test status=SUCCESS method=Retail_OnBoarding.signUp_test()[pri:0, instance:com.test.jellyfish.Retail_OnBoarding@63a65a25] output={null}]]]>
+                <![CDATA[tom@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tomjerry123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retail_login -->
+        <test-method is-config="true" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.test.jellyfish.LoginTest@6b26e945]" started-at="2020-03-12T14:50:16 IST" name="postCondition" finished-at="2020-03-12T14:50:17 IST" duration-ms="574" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=retail_login status=SUCCESS method=LoginTest.retail_login(java.lang.String, java.lang.String)[pri:0, instance:com.test.jellyfish.LoginTest@6b26e945] output={null}]]]>
               </value>
             </param>
           </params>
@@ -55,7 +67,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- com.test.jellyfish.Retail_OnBoarding -->
+      </class> <!-- com.test.jellyfish.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

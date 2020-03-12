@@ -1,5 +1,6 @@
 package com.generic.jellyFish;
 
+import java.awt.AWTException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -59,7 +60,7 @@ public class BaseLib
 	   @BeforeMethod
 	   @Parameters(value="browser")
 	   
-	   public void preCondition(String browser) throws IOException
+	   public void preCondition(String browser) throws IOException, AWTException
 	   {
 		   file=new File(System.getProperty("user.dir")+"/object_repository.properties");
 		   fis= new FileInputStream(file);
@@ -79,22 +80,21 @@ public class BaseLib
 			  System.out.println(url);
 		
 		  } 
-			  else
+			  
+		  else
 			  {
 				 
 				  
-				  System.setProperty("webdriver.chrome.driver",new File(System.getProperty("user.dir"))+"/exeFiles/chromedriver.exe");
-				   driver=new ChromeDriver();
-			    
-				driver.manage().window().maximize();
+				System.setProperty("webdriver.chrome.driver",new File(System.getProperty("user.dir"))+"/exeFiles/chromedriver.exe");
+				driver=new ChromeDriver();
+			    driver.manage().window().maximize();
 				String u = p.getProperty("url");
 				
 				System.out.println(u);
 				driver.get(u);
-				Utility.waitTillPageLoad(2000);
 				String title = driver.getTitle();
 				System.out.println(title);
-				//Assert.assertEquals(title,"PROASSUR");  
+				 
 				String url = driver.getCurrentUrl();
 			    System.out.println(url);
 			  }
@@ -135,23 +135,24 @@ public class BaseLib
 			   logger.log(Status.PASS, "Test Case PASSED IS " + r.getName());
 		 
 	      }
-		   
+		  
 		   report.flush();
 	   }
 	   
-	   @DataProvider
-	  	public Object[][] getCRMTestData() throws EncryptedDocumentException, IOException
-	   {
-	  		Object data[][] = ExcelLib.getExceldata("Sheet1");
-	  		return data;
-	  }
+	  //@DataProvider(name = "Login")
+	 // public Object[][] getTestData() throws EncryptedDocumentException, IOException
+	  // {
+	  //		Object data[][] = ExcelLib.getExceldata("Sheet4");
+	  	//	return data;
+	 // }
 	   
-	   @DataProvider
+	   @DataProvider(name = "Registration")
 	   public Object[][] getRegistrationData() throws EncryptedDocumentException, IOException
 	   
-	   {
-		   Object data[][] = ExcelLib.getExceldata("Sheet2");
-		  return data;
+	  {
+		  Object data[][] = ExcelLib.getExceldata("Sheet1");
 		   
-	   }
+		 return data;
+		   
+	  }
 }

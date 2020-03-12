@@ -7,14 +7,14 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.test.jellyfish.Retail_OnBoarding">
+      <class name="com.test.jellyfish.LoginTest">
         <methods>
           <include name="setSuiteUp"/>
           <include name="postCondition"/>
-          <include name="signUp_test"/>
           <include name="preCondition"/>
+          <include name="retail_login"/>
         </methods>
-      </class> <!-- com.test.jellyfish.Retail_OnBoarding -->
+      </class> <!-- com.test.jellyfish.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

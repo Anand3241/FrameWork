@@ -97,7 +97,7 @@
   			<configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>signUp.xml</suiteXmlFile>
+                        <suiteXmlFile>login.xml</suiteXmlFile>
                      </suiteXmlFiles>
             </configuration>
   		</plugin>

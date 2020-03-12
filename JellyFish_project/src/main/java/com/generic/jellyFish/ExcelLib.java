@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelLib 
 {
-	public static String TESTDATA_SHEET_PATH = "D:\\Kellton_project\\JellyFish_project\\dataFiles\\data.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\anand.srivastava\\git\\repository\\JellyFish_project\\dataFiles\\data.xlsx";
 	   public static Object[][] getExceldata(String sheetname) throws EncryptedDocumentException, IOException
 	   {
 		     FileInputStream fis=new FileInputStream(TESTDATA_SHEET_PATH);
@@ -22,15 +22,17 @@ public class ExcelLib
 			   Object[][] arrayExcelData=new Object[number_rows][cellcount];
 			   for(int i =0;i<number_rows;i++)
 			   {
-				   for(int k =0;k<cellcount;k++)
+				   for(int k =0;k<cellcount;k++)	
+					   	
+					   
 				   {
 					   arrayExcelData[i][k] = sh.getRow(i + 1).getCell(k).toString();
 					   
 					 
 				   }
 			   }
-	      return arrayExcelData; 
-		  
+	     
+			   return arrayExcelData; 
 		  }
-	   
+	  
 }

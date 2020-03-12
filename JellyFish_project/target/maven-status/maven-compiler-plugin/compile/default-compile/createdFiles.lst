@@ -5,4 +5,5 @@ com\generic\jellyFish\ExcelLib.class
 com\generic\jellyFish\GetScreenShotLib.class
 com\generic\jellyFish\ListenerTest.class
 com\generic\jellyFish\EventHandler.class
+com\pom\jellyFish\Retail_LoginPage.class
 com\pom\jellyFish\Reatil_SignUp_Page.class
